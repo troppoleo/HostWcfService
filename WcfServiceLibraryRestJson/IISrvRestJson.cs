@@ -33,6 +33,7 @@ namespace WcfServiceLibraryRestJson
         string GetEcho3(string pEcho);
 
 
+
         //[OperationContract]
         //[WebInvoke(Method = "POST", RequestFormat = WebMessageFormat.Json,
         //    UriTemplate = "/ChiamataJsonComplessa", ResponseFormat = WebMessageFormat.Json)]
