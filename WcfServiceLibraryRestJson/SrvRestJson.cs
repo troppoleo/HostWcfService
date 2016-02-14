@@ -10,28 +10,42 @@ namespace WcfServiceLibraryRestJson
     // NOTE: You can use the "Rename" command on the "Refactor" menu to change the class name "Service1" in both code and config file together.
     public class SrvRestJson : ISrvRestJson
     {
-        public string GetData(int value)
-        {
-            return string.Format("You entered: {0}", value);
-        }
+        //public string GetData(int value)
+        //{
+        //    return string.Format("You entered: {0}", value);
+        //}
 
-        public CompositeType GetDataUsingDataContract(CompositeType composite)
-        {
-            if (composite == null)
-            {
-                throw new ArgumentNullException("composite");
-            }
-            if (composite.BoolValue)
-            {
-                composite.StringValue += "Suffix";
-            }
-            return composite;
-        }
-
+        //public CompositeType GetDataUsingDataContract(CompositeType composite)
+        //{
+        //    if (composite == null)
+        //    {
+        //        throw new ArgumentNullException("composite");
+        //    }
+        //    if (composite.BoolValue)
+        //    {
+        //        composite.StringValue += "Suffix";
+        //    }
+        //    return composite;
+        //}
 
         public string GetEcho(string pEcho)
         {
             return string.Format("Hai scritto: {0}", pEcho);
+        }
+
+        public string GetEcho2(string pEcho)
+        {
+            return string.Format("Hai scritto: {0}", pEcho);
+        }
+
+        public string GetEcho3(string pEcho)
+        {
+            return string.Format("Hai scritto: {0}", pEcho);
+        }
+
+        public string DoPost(ParemterForPost pParemterForPost)
+        {
+            return string.Format("Parametro 1: {0} Parametro 2: {1}", pParemterForPost.par1, pParemterForPost.par2);
         }
     }
 }
